@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Story+Script&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("a1.jpg") no-repeat center/cover;
+}
+
+.main{
+    width:420px;
+    /* Use a semi-transparent dark background so white text is readable */
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(6px);
+    border:2px solid rgba(255,255,255,0.12);
+    color:white;
+    border-radius:10px;
+    padding:30px 40px;
+}
+
+.main h1{
+    font-size:36px;
+    text-align:center;
+    color: rgba(255,255,255,0.95);
+    margin-bottom:6px;
+}
+
+.main .input-element{
+    width: 100%;
+    height:50px;
+    position: relative;
+    margin: 30px 0;
+    /* Ensure the wrapper clips children so the rounded corners show cleanly */
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.input-element input{
+    width:100%;
+    height:100%;
+    /* subtle background so borders and radius show on any background */
+    background: rgba(255,255,255,0.03);
+    border:none;
+    outline:none;
+    border:2px solid rgba(255,255,255,0.2);
+    border-radius: 40px;
+    font-size:16px;
+    padding:12px 45px 12px 20px;
+    color: white; /* ensure typed text is visible */
+}
+
+.input-element input::placeholder{
+    color: rgba(255,255,255,0.75);
+}
+
+.input-element i{
+    position:absolute;
+    right:16px;
+    top:50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,0.9);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.input-element input:focus{
+    border-color: rgba(255,255,255,0.95);
+    background: rgba(255,255,255,0.04);
+}
+
+.main .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size:14.5px;
+}
+
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color:white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.main .btn{
+    width: 100%;
+    height: 45px;
+    background: white;
+    border:none;
+    outline:none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor:pointer;
+    font-size: 16px;
+    color: #111; /* dark text on white button for contrast */
+    font-weight: 600;
+}
+
+.loginb{
+    position: relative;
+}
+
+.loginb i{
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform: translateY(-50%);
+}
